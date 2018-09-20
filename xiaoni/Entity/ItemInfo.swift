@@ -17,4 +17,8 @@ class ItemInfo: Object {
     @objc dynamic var IMAGE: String = ""
     @objc dynamic var SORT: Int = 0
     @objc dynamic var AVAILABLE: Int = 1
+    
+    override static func primaryKey() -> String? {
+        return "ITEM_ID"
+    }
 }
