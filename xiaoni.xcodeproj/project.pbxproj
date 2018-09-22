@@ -18,6 +18,10 @@
 		0BF5F2D5214DEB1C0039A85F /* ItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF5F2D4214DEB1C0039A85F /* ItemInfo.swift */; };
 		4B1E6B3B2153F69D0060BAD3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E6B3A2153F69C0060BAD3 /* MenuViewController.swift */; };
 		4B1E6B3F215400360060BAD3 /* MenuView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E6B3E215400360060BAD3 /* MenuView2Controller.swift */; };
+		4B1E6B43215563870060BAD3 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E6B42215563870060BAD3 /* ItemViewController.swift */; };
+		4B1E6B45215565F80060BAD3 /* ItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1E6B44215565F80060BAD3 /* ItemViewCell.swift */; };
+		4B2DF47721564CBC0033F90D /* MenuView3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DF47621564CBC0033F90D /* MenuView3Controller.swift */; };
+		4B2DF479215672C00033F90D /* MenuView4Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2DF478215672C00033F90D /* MenuView4Controller.swift */; };
 		4B4AF6EA2153F55A00399A46 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4AF6E82153F55A00399A46 /* Realm.framework */; };
 		4B4AF6EB2153F55A00399A46 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4AF6E82153F55A00399A46 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4B4AF6EC2153F55A00399A46 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4AF6E92153F55A00399A46 /* RealmSwift.framework */; };
@@ -53,6 +57,10 @@
 		0BF5F2D4214DEB1C0039A85F /* ItemInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfo.swift; sourceTree = "<group>"; };
 		4B1E6B3A2153F69C0060BAD3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		4B1E6B3E215400360060BAD3 /* MenuView2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView2Controller.swift; sourceTree = "<group>"; };
+		4B1E6B42215563870060BAD3 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		4B1E6B44215565F80060BAD3 /* ItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewCell.swift; sourceTree = "<group>"; };
+		4B2DF47621564CBC0033F90D /* MenuView3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView3Controller.swift; sourceTree = "<group>"; };
+		4B2DF478215672C00033F90D /* MenuView4Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView4Controller.swift; sourceTree = "<group>"; };
 		4B4AF6E82153F55A00399A46 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Resources/Realm.framework; sourceTree = "<group>"; };
 		4B4AF6E92153F55A00399A46 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Resources/RealmSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +104,10 @@
 				0BF5F2B4214CA6040039A85F /* ViewController.swift */,
 				4B1E6B3A2153F69C0060BAD3 /* MenuViewController.swift */,
 				4B1E6B3E215400360060BAD3 /* MenuView2Controller.swift */,
+				4B2DF47621564CBC0033F90D /* MenuView3Controller.swift */,
+				4B2DF478215672C00033F90D /* MenuView4Controller.swift */,
+				4B1E6B42215563870060BAD3 /* ItemViewController.swift */,
+				4B1E6B44215565F80060BAD3 /* ItemViewCell.swift */,
 				0BF5F2B6214CA6040039A85F /* Main.storyboard */,
 				0BF5F2B9214CA6050039A85F /* Assets.xcassets */,
 				0BF5F2BB214CA6050039A85F /* LaunchScreen.storyboard */,
@@ -148,6 +160,7 @@
 				TargetAttributes = {
 					0BF5F2AE214CA6040039A85F = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -187,14 +200,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B2DF479215672C00033F90D /* MenuView4Controller.swift in Sources */,
 				0BA383FC214E1404001C449E /* CartInfo.swift in Sources */,
 				0BF5F2B5214CA6040039A85F /* ViewController.swift in Sources */,
 				4B1E6B3F215400360060BAD3 /* MenuView2Controller.swift in Sources */,
 				0BF5F2D3214CF7610039A85F /* MenuInfo.swift in Sources */,
 				0BA383FA214E1356001C449E /* ItemDetails.swift in Sources */,
+				4B1E6B45215565F80060BAD3 /* ItemViewCell.swift in Sources */,
+				4B2DF47721564CBC0033F90D /* MenuView3Controller.swift in Sources */,
 				0BF5F2B3214CA6040039A85F /* AppDelegate.swift in Sources */,
 				0BF5F2D5214DEB1C0039A85F /* ItemInfo.swift in Sources */,
 				4B1E6B3B2153F69D0060BAD3 /* MenuViewController.swift in Sources */,
+				4B1E6B43215563870060BAD3 /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,7 +368,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jzhous.io.xiaoni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -373,7 +390,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jzhous.io.xiaoni;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

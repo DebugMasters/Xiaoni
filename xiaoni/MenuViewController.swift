@@ -26,14 +26,26 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if menuItems[indexPath.row].ITEM_FLAG == 1 {
+            var list: Array<ItemInfo> = []
+            let result = realm.objects(ItemInfo.self).filter("MENU_ID = " + menuItems[indexPath.row].MENU_ID.description).sorted(byKeyPath: "SORT")
+            for r in result {
+                list.append(r)
+            }
+            let center = NotificationCenter.default
+            center.post(name: NSNotification.Name(rawValue: "itemList"), object: list)
+        }
+        else {
+            self.performSegue(withIdentifier: "segue1_2", sender: nil)
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         print(realm.configuration.fileURL!)
-        
 //        let item = MenuInfo()
 //        item.MENU_ID = 7
 //        item.MENU_NAME = "设计师"
@@ -43,17 +55,11 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 //        try! realm.write {
 //            realm.add(item)
 //        }
-        
         let result = realm.objects(MenuInfo.self).filter("PARENT_ID = 0").sorted(byKeyPath: "SORT")
         for r in result {
             menuItems.append(r)
         }
         menuView.tableFooterView = UIView()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
